@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 class Node {
 public:
@@ -25,9 +24,9 @@ public:
 
 class VariableExpression : public Expression {
 public:
-    std::string name;
+    const char* name;
 
-    VariableExpression(std::string name) : name(name) {}
+    VariableExpression(const char* name) : name(name) {}
 
     void print() const override {
         std::cout << name;
@@ -61,13 +60,13 @@ public:
     }
 
 private:
-    std::string getOperatorSymbol(BinaryOperator op) const {
+    const char getOperatorSymbol(BinaryOperator op) const {
         switch (op) {
-            case BinaryOperator::Add: return "+";
-            case BinaryOperator::Subtract: return "-";
-            case BinaryOperator::Multiply: return "*";
-            case BinaryOperator::Divide: return "/";
-            default: return "?";
+            case BinaryOperator::Add: return '+';
+            case BinaryOperator::Subtract: return '-';
+            case BinaryOperator::Multiply: return '*';
+            case BinaryOperator::Divide: return '/';
+            default: return '?';
         }
     }
 };
