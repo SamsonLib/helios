@@ -1,0 +1,31 @@
+:: myFunction(arg1, arg2, arg3) > type =
+    $ (arg1 == arg2):
+        -> arg1 + arg2 + arg3
+    % (arg2 == (arg1 + arg3)):
+        -> 0
+    %:
+        -> arg1 * arg2
+
+:: main() > type = // Im not sure is Unit good like in scala or int like in c or something different
+    print(
+        myFunction(3, 5, 2)
+    )
+
+
+/*
+Python Translation:
+
+def myFunction(arg1, arg2, arg3) -> int:
+    if arg1 == arg2:
+        return arg1 + arg2 + arg3
+    elif (arg2 == (arg1 + arg3)):
+        return 0
+    else:
+        return arg1 * arg2
+
+if __name__ == "__main__":
+    print(
+        myFunction(3, 5, 2)
+    )
+
+*/
