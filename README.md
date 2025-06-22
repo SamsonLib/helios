@@ -5,8 +5,7 @@ Helios is written in Rust and its my first Rust project (I don't like the langua
 
 
 # Maybe possable example grammar:
-![[example.txt]]
-
+[Example 1](example.txt)
 
 # Todo
 - [ ] Define grammar
