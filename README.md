@@ -1,4 +1,5 @@
 # Helios
+**The idea was to create the most cursed language**
 This is a Programming Language with still undifined grammar.
 
 Helios is written in Rust and its my first Rust project (I don't like the language)
